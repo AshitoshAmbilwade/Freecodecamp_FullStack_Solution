@@ -1,0 +1,97 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox for the header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    /* Fixes the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ensures the header takes full width */
+    z-index: 1000;
+    /* Ensures it stays on top of other content */
+}
+
+#header-img {
+    max-width: 100px;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Adding padding to avoid overlap with fixed navbar */
+body {
+    padding-top: 100px;
+    /* Adjust based on the height of your header */
+}
+
+/* Main section styling */
+section {
+    padding: 50px;
+}
+
+#video {
+    width: 100%;
+    height: auto;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="email"],
+input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}

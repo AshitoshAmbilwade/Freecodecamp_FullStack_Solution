@@ -1,0 +1,44 @@
+/* Base styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    width: 16%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+.main-section {
+    margin-left: 18%;
+    /* Adjust to make space for the navbar */
+    padding: 20px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-section {
+        margin-left: 0;
+        padding-top: 20px;
+    }
+}
